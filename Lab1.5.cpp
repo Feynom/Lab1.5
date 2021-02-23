@@ -6,6 +6,7 @@ int main()
 {
     Pair a, b, c, d;
     Fraction f;
+    int result;
 
     cout << "\nPair a" << endl;
     a.Init(1, 2.5);
@@ -21,13 +22,16 @@ int main()
 
 
     cout << "\na and b" << endl;
-    f.ComparePairs(a, b);
+    result = f.ComparePairs(a, b);
+    f.ComparePairsResult(result);
    
     cout << "\na and c" << endl;
-    f.ComparePairs(a, c);
+    result = f.ComparePairs(a, c);
+    f.ComparePairsResult(result);
 
     cout << "\nb and c" << endl;
-    f.ComparePairs(b, c);
+    result = f.ComparePairs(b, c);
+    f.ComparePairsResult(result);
     
     return 0;
 }

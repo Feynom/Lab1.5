@@ -12,5 +12,6 @@ public:
 	void Read();
 	string toString() const;
 
-	void ComparePairs(Pair p1, Pair p2);
+	double ComparePairs(Pair p1, Pair p2) const;
+	void ComparePairsResult(int result);
 };
